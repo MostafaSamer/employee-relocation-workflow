@@ -1,0 +1,18 @@
+<h2 mat-dialog-title>Relocate Employee</h2>
+
+<mat-dialog-content>
+    <p>Where to relocate {{employee.name}}?</p>
+
+    <!-- Add mat-select for departments -->
+        <label>Select Department</label>
+        <select [(ngModel)]="selectedDepartment">
+            <option *ngFor="let department of departments" [value]="department.id">
+                {{ department.name }}
+            </option>
+        </select>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button mat-button [mat-dialog-close]="false">Cancel</button>
+    <button mat-button [mat-dialog-close]="{ relocate: true, departmentId: selectedDepartment }">Relocate</button>
+</mat-dialog-actions>
