@@ -1,0 +1,18 @@
+{
+  "employee": [
+    {
+      "id": "1",
+      "name": "Mostafa",
+      "skills": ["Angular", "React", "Node"],
+      "performance": 90,
+      "department": 1
+    }
+  ],
+  "department": [
+    {
+      "id": "1",
+      "name": "IT"
+    }
+  ],
+  "relocation_request": []
+}

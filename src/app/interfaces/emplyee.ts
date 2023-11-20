@@ -1,6 +1,6 @@
 import { Department } from "./department";
 
-interface Employee {
+export interface Employee {
     id: number;
     name: string;
     skills: string[];
