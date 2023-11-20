@@ -1,0 +1,12 @@
+.cta-btn {
+    background-color: #032F61;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(#032F61, 10%);
+    }
+}
