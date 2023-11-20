@@ -1,5 +1,8 @@
 <div class="employee-card">
     <div><strong>Name: </strong>{{ employee?.name }}</div>
+    <div><strong>Performance: </strong>{{ employee?.performance }}</div>
+    <div><strong>Skills: </strong>{{ employee?.skills }}</div>
+    <div><strong>Department: </strong>{{ employee?.department?.name }}</div>
     <div class="employee-options">
         <app-cta-button text="Relocate" (onClickEvent)="relocateEmployee(employee)"></app-cta-button>
     </div>

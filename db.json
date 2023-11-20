@@ -5,7 +5,30 @@
       "name": "Mostafa",
       "skills": ["Angular", "React", "Node"],
       "performance": 90,
-      "department": 1
+      "department": {
+        "id": 1,
+        "name": "IT"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Mostafa",
+      "skills": ["Angular", "React", "Node"],
+      "performance": 90,
+      "department": {
+        "id": 1,
+        "name": "IT"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Mostafa",
+      "skills": ["Angular", "React", "Node"],
+      "performance": 90,
+      "department": {
+        "id": 1,
+        "name": "IT"
+      }
     }
   ],
   "departments": [
