@@ -4,24 +4,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
+Make sure you have `npm`, `ng`, and `json-server` installed
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+Run `npm run server` to run out fake API server
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Code Structure
 
-## Build
+- Pages: Include all pages we have in our case it is one page
+- components: Include all our shared components we could have and can split it more
+- interfaces: for typescript interfaces
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## To update
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Add API services seprated from employee, and department services
