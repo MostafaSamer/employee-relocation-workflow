@@ -24,11 +24,9 @@ export class RelocateModalComponent {
   ) {}
 
   ngOnInit(): void {
-  //   this.loadingService.showLoading();
     this.departmentService.getDepartments().subscribe((departments) => {
       this.departments = departments;
       this.selectedDepartment = this.employee.department.id.toString();
-      // this.loadingService.hideLoading();
     })
   }
 

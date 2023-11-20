@@ -20,10 +20,8 @@ export class ListEmployeesComponent {
     ) {}
 
     ngOnInit(): void {
-    //   this.loadingService.showLoading();
       this.employeeService.getEmployees().subscribe((employees) => {
         this.employees = employees;
-        // this.loadingService.hideLoading();
       })
     }
 
