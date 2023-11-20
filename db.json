@@ -1,5 +1,5 @@
 {
-  "employee": [
+  "employees": [
     {
       "id": "1",
       "name": "Mostafa",
@@ -8,11 +8,11 @@
       "department": 1
     }
   ],
-  "department": [
+  "departments": [
     {
       "id": "1",
       "name": "IT"
     }
   ],
-  "relocation_request": []
+  "relocation_requests": []
 }
