@@ -2,8 +2,6 @@
 
 <mat-dialog-content>
     <p>Where to relocate {{employee.name}}?</p>
-
-    <!-- Add mat-select for departments -->
         <label>Select Department</label>
         <select [(ngModel)]="selectedDepartment">
             <option *ngFor="let department of departments" [value]="department.id">

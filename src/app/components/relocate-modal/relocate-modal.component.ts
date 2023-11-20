@@ -15,7 +15,7 @@ import { Employee } from '../../interfaces/employee';
 })
 export class RelocateModalComponent {
   departments: Department[] = [];
-  selectedDepartment: Department | null = null;
+  selectedDepartment: string = "";
 
   constructor(
     public dialogRef: MatDialogRef<RelocateModalComponent>,
@@ -27,6 +27,7 @@ export class RelocateModalComponent {
   //   this.loadingService.showLoading();
     this.departmentService.getDepartments().subscribe((departments) => {
       this.departments = departments;
+      this.selectedDepartment = this.employee.department.id.toString();
       // this.loadingService.hideLoading();
     })
   }

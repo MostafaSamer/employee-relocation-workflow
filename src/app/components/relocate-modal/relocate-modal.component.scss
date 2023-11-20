@@ -7,6 +7,11 @@ mat-dialog-content {
     color: #333;
 }
 
+mat-dialog-content select {
+    width: 120px;
+    margin: 0px 20px;
+}
+
 mat-dialog-actions {
     justify-content: flex-end;
     margin-top: 20px;

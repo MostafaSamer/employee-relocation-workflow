@@ -22,4 +22,9 @@ export class DepartmentService {
   getDepartments(): Observable<Department[]> {
     return this.http.get<Department[]>(this.apiUrl);
   }
+
+  getDepartment(id: string): Observable<Department> {
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.get<Department>(url);
+  }
 }
