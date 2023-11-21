@@ -1,0 +1,18 @@
+<div>
+    <div class="form-group">
+        <label for="performanceFrom">Performance From:</label>
+        <input type="number" id="performanceFrom" [(ngModel)]="filterOptions.performance_from" min="0" max="100"
+            (change)="change_filter()">
+    </div>
+
+    <div class="form-group">
+        <label for="performanceTo">Performance To:</label>
+        <input type="number" id="performanceTo" [(ngModel)]="filterOptions.performance_to" min="0" max="100"
+            (change)="change_filter()">
+    </div>
+
+    <div class="form-group">
+        <label for="skills">Skills:</label>
+        <input type="text" id="skills" [(ngModel)]="filterOptions.skills" (input)="change_filter()">
+    </div>
+</div>

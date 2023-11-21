@@ -1,5 +1,6 @@
+<app-filter-employee (filterEmployee)="handleFilterEvent($event)"></app-filter-employee>
 <div class="employee-list">
-    <div *ngFor="let employee of employees">
+    <div *ngFor="let employee of filterd_employees">
         <app-card-employee [employee]="employee"></app-card-employee>
     </div>
 </div>
